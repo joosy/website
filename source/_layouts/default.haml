@@ -1,0 +1,62 @@
+!!!
+%html
+  %head
+    %meta{:content => "IE=8", "http-equiv" => "X-UA-Compatible"}
+    %meta{:charset => "utf-8"}
+    %title Joosy: browser applications framework
+    %script{type: 'text/javascript', src: 'http://code.jquery.com/jquery-1.10.2.min.js'}
+    {% stylesheet application %}
+    {% javascript application %}
+
+  %body
+    .topbar
+      .topbar_wrap
+        %table{:cellpadding =>"0", :cellspacing => "0"}
+          %tbody
+            %tr
+              %td{class: 'active'}
+                %a{href: '/'}
+                  Joosy (1.1.0)
+              %td{class: 'disabled'}
+                %a{href: '#'}
+                  Who's using
+              %td
+                %a{href: 'http://sample.joosy.ws/routes.js.coffee.html'}
+                  Annotated sample
+              %td
+                %a{href: 'http://guides.joosy.ws'}
+                  Guides
+              %td{class: 'disabled'}
+                %a{href: '#'}
+                  Screencasts
+              %td
+                %a{href: 'http://api.joosy.ws'}
+                  API
+              %td
+                %a{href: 'http://github.com/joosy/joosy'}
+                  Code
+              %td
+                %a{href: 'http://github.com/joosy/joosy/issues'}
+                  Bugs
+              %td{class: 'disabled'}
+                %a{href: '#'}
+                  Community
+              %td{class: "twitter"}
+                %a{href: "http://twitter.com/joosy_web"}
+                  Twitter
+                %img{src: "{% asset_path twit_sign_orange.png %}"}
+
+    {{ content }}
+
+    :javascript
+      var _gauges = _gauges || [];
+      (function() {
+        var t   = document.createElement('script');
+        t.type  = 'text/javascript';
+        t.async = true;
+        t.id    = 'gauges-tracker';
+        t.setAttribute('data-site-id', '4fccaa07613f5d4efe000007');
+        t.src = '//secure.gaug.es/track.js';
+        var s = document.getElementsByTagName('script')[0];
+        s.parentNode.insertBefore(t, s);
+      })();

@@ -1,15 +1,10 @@
-source 'https://rubygems.org'
+# A sample Gemfile
+source "https://rubygems.org"
 
-gem 'unicorn'
-gem 'rails', '3.2.1'
+gem 'pry'
+gem 'coffee-script'
+gem 'sass'
+gem 'compass'
+gem 'jekyll'
+gem 'jekyll-assets'
 gem 'haml'
-
-group :assets do
-  gem 'sass-rails',   '~> 3.2.3'
-  gem 'coffee-rails', '~> 3.2.1'
-  gem 'compass-rails'
-  gem 'uglifier', '>= 1.0.3'
-end
-
-gem 'jquery-rails'
-gem 'newrelic_rpm'
