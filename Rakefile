@@ -7,10 +7,11 @@ task :prepare do
 end
 
 task :push do
+  cd(deploy_dir) { system "git pull" }
   Dir["#{deploy_dir}/*"].each { |f| rm_rf(f) }
   system "jekyll build"
 
-  cd "#{deploy_dir}" do
+  cd(deploy_dir) do
     system "git add -A"
     message = "Site updated at #{Time.now.utc}"
     system "git commit -m \"#{message}\""
