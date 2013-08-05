@@ -18,3 +18,7 @@ task :push do
     system "git push origin gh-pages"
   end
 end
+
+task :serve do
+  system "bundle exec jekyll serve --watch"
+end
