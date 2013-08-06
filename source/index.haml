@@ -13,13 +13,13 @@ layout: default
   .pic_list
     %ul
       %li
-        %img{src: "{% asset_path atomic.png %}", class: 'atomic'}
+        %img{src: "{% asset_path highlights/atomic.png %}", class: 'atomic'}
       %li
-        %img{src: "{% asset_path haml.png %}", class: 'haml'}
+        %img{src: "{% asset_path highlights/haml.png %}", class: 'haml'}
       %li
-        %img{src: "{% asset_path rails.png %}", class: 'rails'}
+        %img{src: "{% asset_path highlights/rails.png %}", class: 'rails'}
       %li
-        %img{src: "{% asset_path circle.png %}", class: 'circle'}
+        %img{src: "{% asset_path highlights/circle.png %}", class: 'circle'}
   .text_list
     %ul
       %li
@@ -47,28 +47,28 @@ layout: default
     %center
       %h1 Look, it's beautiful and easy to use:
     .code_block
-      = html 'code'
+      = html 'vendor/code'
     .code_block
-      = html 'template'
+      = html 'vendor/template'
 .button_module
   .three_buttons
     .button.get_started
       .left
       .middle
         %a{href: "http://guides.joosy.ws/guides/basics/getting-started.html"}
-          %img{src: "{% asset_path get_started.png %}"}
+          %img{src: "{% asset_path buttons/get_started.png %}"}
       .right
     .button.investigate
       .left
       .middle
         %a{href: "http://api.joosy.ws"}
-          %img{src: "{% asset_path investigate.png %}"}
+          %img{src: "{% asset_path buttons/investigate.png %}"}
       .right
     .button.fork_us
       .left
       .middle
         %a{:href => "http://github.com/roundlake/joosy"}
-          %img{:src => "{% asset_path fork.png %}"}
+          %img{src: "{% asset_path buttons/fork.png %}"}
       .right
 .joosy_usage_module
   .wrap_usage
@@ -77,23 +77,19 @@ layout: default
         %p Who's using Joosy:
       %li
         %a{href: "http://roundlake.ru"}
-          %img.gray.rnd_lake{src: "{% asset_path roundlake.png %}"}
-          %img.colored.rnd_lake{src: "{% asset_path roundlake_colored.png %}"}
+          %img.desaturate.roundlake{src: "{% asset_path consumers/roundlake_colored.png %}"}
       %li
         %img{src: "{% asset_path separator.png %}"}
       %li
         %a{href: "http://mainpeople.com"}
-          %img.gray.mp{src: "{% asset_path MP.png %}", style: "padding-top:15px;"}
-          %img.colored.mp{src: "{% asset_path MP_colored.png %}", style: "padding-top:15px;"}
+          %img.desaturate.mp{src: "{% asset_path consumers/MP_colored.png %}", style: "padding-top:15px;"}
       %li
         %img{src: "{% asset_path separator.png %}"}
       %li
         %a{href: "http://dvnts.ru"}
-          %img.gray.dvnts{src: "{% asset_path deviants.png %}"}
-          %img.colored.dvnts{src: "{% asset_path deviants_colored.png %}"}
+          %img.desaturate.dvnts{src: "{% asset_path consumers/deviants_colored.png %}"}
       %li
         %img{src: "{% asset_path separator.png %}"}
       %li{style: "padding-right: 0px"}
         %a{href: "http://control.us"}
-          %img.gray.ctrlus{src: "{% asset_path controlus.png %}"}
-          %img.colored.ctrlus{src: "{% asset_path controlus_colored.png %}"}
+          %img.desaturate.controlus{src: "{% asset_path consumers/controlus_colored.png %}"}
