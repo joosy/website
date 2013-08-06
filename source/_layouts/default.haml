@@ -52,8 +52,30 @@
     .footer
       .ftr_wrap
         .left
-          %p Copyright 2012-2013, <a href="http://borisstaal.com">Boris Staal</a>
-        / .right
+          %p
+            %strong
+              Copyright 2012-2013,
+              %a{href: "http://staal.io"}
+                Boris Staal
+            %br
+            %small
+              %span
+                Hosted at
+              %a{href: "http://pages.github.com"}<>
+                Github Pages
+              ,
+              %span
+                generated with
+              %a{href: 'http://jekyllrb.com'}<>
+                Jekyll
+        .right
+          %p
+            Want to improve something on this site?
+            %br
+            %a{href: 'https://github.com/joosy/website'}<>
+              Pull requests
+            %span
+              are very welcome!
 
     :javascript
       var _gauges = _gauges || [];

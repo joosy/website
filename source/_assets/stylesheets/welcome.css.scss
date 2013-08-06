@@ -247,39 +247,3 @@
     }
   }
 }
-
-
-
-.footer {
-  clear:both;
-  font-family: "Trebuchet MS";
-
-  height: 97px;
-  background: #383838 no-repeat ;
-  .ftr_wrap {
-    width:906px;
-    margin:0 auto;
-    .left {
-      float:left;
-      p {
-        font-size: 14px;
-        font-weight:bold;
-        color:#a0a0a0;
-        text-shadow: none;
-        padding-top:35px;
-        a { color: #2678c4}
-      }
-    }
-    .right {
-      float:right;
-      p {
-        font-size: 14px;
-        font-weight:bold;
-        color:#a0a0a0;
-        text-shadow: none;
-        padding-top:35px;
-        a { color: #2678c4}
-      }
-    }
-  }
-}

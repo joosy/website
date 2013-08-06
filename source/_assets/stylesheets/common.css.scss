@@ -117,3 +117,48 @@ h1 {
     height: 355px;
   }
 }
+
+.footer {
+  clear:both;
+  font-family: "Trebuchet MS";
+
+  height: 97px;
+  background: #383838 no-repeat;
+
+  .ftr_wrap {
+
+    width: 906px;
+    margin: 0 auto;
+
+    strong {
+      font-weight: bold;
+    }
+
+    small {
+      font-size: 0.9em;
+    }
+
+    .left {
+      float:left;
+      p {
+        font-size: 14px;
+        color: #cbcbcb;
+        text-shadow: none;
+        padding-top:30px;
+        a { color: #2678c4}
+      }
+    }
+
+    .right {
+      float:right;
+      p {
+        line-height: 20px;
+        font-size: 14px;
+        color:#989898;
+        text-shadow: none;
+        padding-top:30px;
+        a { color: #2678c4}
+      }
+    }
+  }
+}
