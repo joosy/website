@@ -100,7 +100,7 @@ h1 {
     border-right: 0px solid #000000; }
 
 .topbar .topbar_wrap {
-  width: 700px;
+  width: 690px;
   margin: 3px auto 0; }
 
 .topbar a {
@@ -314,6 +314,22 @@ img.desaturate{
     display: inline-block;
     padding-left: 2.65em;
     vertical-align: middle; }
+    .joosy_logo .text small {
+      margin-top: 15px;
+      display: block;
+      padding: 8px;
+      font-size: 12px;
+      line-height: 12px;
+      background-color: rgba(0, 0, 0, 0.6);
+      border-radius: 4px;
+      text-align: center;
+      color: white; }
+      .joosy_logo .text small strong {
+        font-weight: bold; }
+      .joosy_logo .text small a {
+        color: white; }
+      .joosy_logo .text small .from {
+        color: #c5b5a7; }
   .joosy_logo h1 {
     font-weight: bold;
     font-size: 33px;
