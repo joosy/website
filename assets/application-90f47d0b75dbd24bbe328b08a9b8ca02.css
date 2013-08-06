@@ -90,18 +90,14 @@ h1 {
   font-size: .7em;
   text-align: center;
   height: 4em; }
-  .topbar .twitter img {
-    height: 17px;
-    margin-left: 47px;
-    position: absolute;
-    top: 11px;
-    width: 21px; }
-  .topbar .twitter {
-    border-right: 0px solid #000000; }
-
-.topbar .topbar_wrap {
-  width: 620px;
-  margin: 3px auto 0; }
+  .topbar .topbar_wrap {
+    width: 600px;
+    margin: 3px auto 0; }
+    .topbar .topbar_wrap td {
+      vertical-align: middle; }
+      .topbar .topbar_wrap td .twitter {
+        height: 20px;
+        overflow: hidden; }
 
 .topbar a {
   color: #ffa000;
@@ -335,7 +331,7 @@ img.desaturate{
   top: -0.1em; }
 
 .joosy_logo {
-  width: 875px;
+  width: 820px;
   margin: 0 auto;
   padding-top: 1.62em;
   font-family: "Trebuchet MS", serif; }
