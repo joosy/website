@@ -9,6 +9,22 @@ layout: default
     .text
       %h1 Browser Applications Framework
       %p That is based on Rails, CoffeeScript and love
+      %small
+        %strong
+          Stable:
+        %a{href: '#'}<
+          Joosy {% joosy_version stable number %}
+        %span.from
+          {% capture date %}{% joosy_version stable built_at %}{% endcapture %}
+          from {{ date | date_to_string }}
+        &nbsp;&nbsp;|&nbsp;&nbsp;
+        %strong
+          Edge:
+        %a{href: '#'}<
+          Joosy {% joosy_version edge number %}
+        %span.from
+          {% capture date %}{% joosy_version edge built_at %}{% endcapture %}
+          from {{ date | date_to_string }}
 .body_part
   .pic_list
     %ul

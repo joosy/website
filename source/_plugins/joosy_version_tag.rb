@@ -4,13 +4,24 @@ module Jekyll
 
   class JoosyVersionTag < Liquid::Tag
 
+    def self.versions
+      return @versions if @versions
+      @versions = JSON.parse Net::HTTP.get('rubygems.org', '/api/v1/versions/joosy.json')
+    end
+
     def initialize(tag_name, text, tokens)
+      text   = text.split(' ')
+      @field = text[1]
+
+      @versions = self.class.versions.select do |x|
+        x['prerelease'] != (text[0] == 'stable')
+      end
+
       super
     end
 
     def render(context)
-      data = JSON.parse Net::HTTP.get('rubygems.org', '/api/v1/gems/joosy.json')
-      data['version']
+      @versions[0][@field]
     end
   end
 end
