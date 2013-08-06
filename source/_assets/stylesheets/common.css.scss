@@ -29,20 +29,20 @@ h1 {
   font-size: .7em;
   text-align: center;
   height: 4em;
-  .twitter img {
-    height: 17px;
-    margin-left: 47px;
-    position: absolute;
-    top: 11px;
-    width: 21px;
+
+ .topbar_wrap {
+    width: 600px;
+    margin: 3px auto 0;
+
+    td {
+      vertical-align: middle;
+
+      .twitter {
+        height: 20px;
+        overflow: hidden;
+      }
+    }
   }
-.twitter {
-  border-right: 0px solid #000000;
-  }
-}
-.topbar .topbar_wrap {
-  width: 620px;
-  margin: 3px auto 0;
 }
 
 .topbar a {
