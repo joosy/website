@@ -30,6 +30,12 @@
     padding-left: 2.65em;
     vertical-align: middle;
 
+    h1 {
+      font-family: "Trebuchet MS", serif;
+      font-size: 36px;
+      font-weight: bold;
+    }
+
     small {
       margin-top: 15px;
       display: block;
@@ -161,10 +167,37 @@
   clear: both;
   background: #eaeaea no-repeat ;
   height: 87px;
-    .button {
+  .button {
     margin-right:23px;
     margin-top: 18px;
     float: left;
+    .left {
+      background: image-url("left_btn.png") no-repeat scroll left top transparent;
+    }
+    .middle {
+      background: image-url("middle_btn.png") repeat-x scroll left top transparent;
+      padding: 0 4px 0 2px;
+    }
+    .right {
+      background: image-url("right_btn.png") no-repeat scroll left top transparent;
+    }
+    & > div {
+      width:10px;
+      height:52px;
+      float: left;
+    }
+    &:hover {
+      .left {
+        background: image-url("left_btn_hover.png") no-repeat scroll left top transparent;
+      }
+      .middle {
+        background: image-url("middle_btn_hover.png") repeat-x scroll left top transparent;
+        padding: 0 4px 0 2px;
+      }
+      .right {
+        background: image-url("right_btn_hover.png") no-repeat scroll left top transparent;
+      }
+    }
     .middle {
       width: 262px;
     }
