@@ -1,6 +1,6 @@
 # [http://www.joosy.ws](http://www.joosy.ws)
 
-The website of Joosy framework.
+:heart: :heart: :heart: The website of Joosy framework :heart: :heart: :heart:
 
 ## Hacking
 
