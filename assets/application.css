@@ -110,12 +110,12 @@ a {
     font-style: normal;
     font-variant: normal;
     font-weight: normal; }
-  .content strong {
-    font-weight: bold; }
-  .content ul {
-    list-style-type: circle; }
-    .content ul li {
-      margin-left: 40px; }
+    .content section.main strong {
+      font-weight: bold; }
+    .content section.main ul {
+      list-style-type: circle; }
+      .content section.main ul li {
+        margin-left: 40px; }
 
 .topbar {
   background: #3c3c3c;
