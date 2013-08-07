@@ -55,9 +55,6 @@ body {
   font: 16px/23px 'Open Sans', Arial, serif;
   background: #383838; }
 
-h1, h2, h3, h4, h5, h6 {
-  font-weight: bold; }
-
 a {
   color: #2678c4; }
 
@@ -69,23 +66,57 @@ ul, ol {
 
 a {
   color: #43ACCC; }
+  a:hover {
+    color: #349CBC; }
+  a:visited {
+    color: #67BCD5; }
 
-a:hover {
-  color: #349CBC; }
-
-a:visited {
-  color: #67BCD5; }
-
-h1 {
-  font-family: "Trebuchet MS", serif;
-  font-size: 36px;
-  font-weight: bold; }
+.gist-file .gist-data {
+  height: 355px; }
 
 .content {
   padding: 0px;
   background: white; }
+  .content header {
+    background: linear-gradient(#ffa000, #ff8300);
+    padding: 10px; }
+    .content header .container {
+      width: 768px;
+      margin: auto;
+      padding: 10px 0;
+      padding-top: 20px; }
+      .content header .container img.logo {
+        height: 80px;
+        width: 94px;
+        margin-top: -10px;
+        margin-left: 10px;
+        margin-right: 15px;
+        vertical-align: middle; }
+      .content header .container h1 {
+        font-weight: bold;
+        font-size: 40px;
+        color: white;
+        display: inline;
+        font-family: 'Trebuchet MS', serif;
+        vertical-align: middle;
+        text-shadow: 1px 1px gray; }
+  .content section.main {
+    width: 768px;
+    margin: auto;
+    padding-top: 40px;
+    padding-bottom: 20px;
+    line-height: 23px;
+    font-family: 'Open Sans', Arial, serif;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: normal; }
+  .content strong {
+    font-weight: bold; }
+  .content ul {
+    list-style-type: circle; }
+    .content ul li {
+      margin-left: 40px; }
 
-/*TOPBAR*/
 .topbar {
   background: #3c3c3c;
   background: -moz-linear-gradient(#3c3c3c, #2a2a2a) repeat scroll 0 0 transparent;
@@ -99,64 +130,32 @@ h1 {
     width: 600px;
     margin: 3px auto 0; }
     .topbar .topbar_wrap td {
-      vertical-align: middle; }
+      vertical-align: middle;
+      margin: 0;
+      padding: 0 0.7em;
+      border-right: .1em solid #626262;
+      white-space: nowrap;
+      list-style: none; }
+      .topbar .topbar_wrap td a {
+        color: #ffa000;
+        font-weight: bold;
+        display: block;
+        margin-top: -4px;
+        position: relative;
+        top: 1px; }
+      .topbar .topbar_wrap td.disabled a {
+        color: gray;
+        text-decoration: none;
+        font-weight: bold; }
+      .topbar .topbar_wrap td.active a {
+        color: white;
+        text-decoration: none;
+        font-weight: bold; }
+      .topbar .topbar_wrap td:last-child {
+        border-right: none; }
       .topbar .topbar_wrap td .twitter {
         height: 20px;
         overflow: hidden; }
-
-.topbar a {
-  color: #ffa000;
-  font-weight: bold;
-  display: block;
-  margin-top: -4px;
-  position: relative;
-  top: 1px; }
-
-.topbar td.disabled a {
-  color: gray;
-  text-decoration: none;
-  font-weight: bold; }
-
-.topbar td.active a {
-  color: white;
-  text-decoration: none;
-  font-weight: bold; }
-
-.topbar td {
-  margin: 0;
-  padding: 0 0.7em;
-  border-right: .1em solid #626262;
-  white-space: nowrap; }
-
-.topbar td:last-child {
-  border-right: none; }
-
-.topbar td {
-  list-style: none;
-  vertical-align: baseline; }
-
-/* END TOPBAR*/
-.button .left {
-  background: url(/assets/left_btn.png?cb=09258fc27616c53a03a086a427a4c3ea) no-repeat scroll left top transparent; }
-.button .middle {
-  background: url(/assets/middle_btn.png?cb=64c82a86797e28a265801d323f762eea) repeat-x scroll left top transparent;
-  padding: 0 4px 0 2px; }
-.button .right {
-  background: url(/assets/right_btn.png?cb=91bd73d19539df1ec81ff4ff2431edb3) no-repeat scroll left top transparent; }
-.button > div {
-  width: 10px;
-  height: 52px;
-  float: left; }
-.button:hover .left {
-  background: url(/assets/left_btn_hover.png?cb=da14823b2b549053054c804b080a57ae) no-repeat scroll left top transparent; }
-.button:hover .middle {
-  background: url(/assets/middle_btn_hover.png?cb=1ad9cae8ce62b4e2871425e49e6a50dc) repeat-x scroll left top transparent;
-  padding: 0 4px 0 2px; }
-.button:hover .right {
-  background: url(/assets/right_btn_hover.png?cb=0046d15edff704509bc1d3feeca2a9e1) no-repeat scroll left top transparent; }
-
-.gist-file .gist-data {
-  height: 355px; }
 
 .footer {
   clear: both;
@@ -347,6 +346,10 @@ img.desaturate{
     display: inline-block;
     padding-left: 2.65em;
     vertical-align: middle; }
+    .joosy_logo .text h1 {
+      font-family: "Trebuchet MS", serif;
+      font-size: 36px;
+      font-weight: bold; }
     .joosy_logo .text small {
       margin-top: 15px;
       display: block;
@@ -450,6 +453,24 @@ img.desaturate{
     margin-right: 23px;
     margin-top: 18px;
     float: left; }
+    .button_module .button .left {
+      background: url(/assets/left_btn.png?cb=09258fc27616c53a03a086a427a4c3ea) no-repeat scroll left top transparent; }
+    .button_module .button .middle {
+      background: url(/assets/middle_btn.png?cb=64c82a86797e28a265801d323f762eea) repeat-x scroll left top transparent;
+      padding: 0 4px 0 2px; }
+    .button_module .button .right {
+      background: url(/assets/right_btn.png?cb=91bd73d19539df1ec81ff4ff2431edb3) no-repeat scroll left top transparent; }
+    .button_module .button > div {
+      width: 10px;
+      height: 52px;
+      float: left; }
+    .button_module .button:hover .left {
+      background: url(/assets/left_btn_hover.png?cb=da14823b2b549053054c804b080a57ae) no-repeat scroll left top transparent; }
+    .button_module .button:hover .middle {
+      background: url(/assets/middle_btn_hover.png?cb=1ad9cae8ce62b4e2871425e49e6a50dc) repeat-x scroll left top transparent;
+      padding: 0 4px 0 2px; }
+    .button_module .button:hover .right {
+      background: url(/assets/right_btn_hover.png?cb=0046d15edff704509bc1d3feeca2a9e1) no-repeat scroll left top transparent; }
     .button_module .button .middle {
       width: 262px; }
     .button_module .button a {
