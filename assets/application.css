@@ -505,6 +505,12 @@ img.desaturate{
   .joosy_usage_module .wrap_usage {
     margin: 0 auto;
     width: 916px; }
+  .joosy_usage_module .news360 {
+    width: 48px;
+    height: 51px; }
+  .joosy_usage_module .hipflat {
+    height: 50px;
+    width: 61px; }
   .joosy_usage_module .roundlake {
     width: 78px;
     height: 51px; }
@@ -522,7 +528,7 @@ img.desaturate{
     margin-top: 0; }
     .joosy_usage_module ul li {
       float: left;
-      padding: 0 21.5px;
+      padding: 0 8px;
       margin-top: 24px; }
       .joosy_usage_module ul li p {
         font-family: "Trebuchet MS";
