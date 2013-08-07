@@ -80,6 +80,7 @@ a {
   .content header {
     background: -webkit-linear-gradient(#ffa000, #ff8300);
     background: linear-gradient(#ffa000, #ff8300);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffa000', endColorstr='#ff8300',GradientType=0 );
     padding: 10px; }
     .content header .container {
       width: 768px;
