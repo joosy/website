@@ -78,6 +78,7 @@ a {
   padding: 0px;
   background: white; }
   .content header {
+    background: -webkit-linear-gradient(#ffa000, #ff8300);
     background: linear-gradient(#ffa000, #ff8300);
     padding: 10px; }
     .content header .container {
