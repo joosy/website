@@ -19,6 +19,6 @@ task :push do
   end
 end
 
-task :serve do
+task :server do
   system "bundle exec jekyll serve --watch"
 end
