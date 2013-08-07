@@ -89,8 +89,18 @@ layout: default
 .joosy_usage_module
   .wrap_usage
     %ul
-      %li{style: "padding-left: 0px"}
+      %li{style: "padding-left: 0px; padding-right: 14px"}
         %p Who's using Joosy:
+      %li
+        %a{href: "http://news360.com"}
+          %img.desaturate.news360{src: "{% asset_path consumers/news360.png %}"}
+      %li
+        %img{src: "{% asset_path separator.png %}"}
+      %li
+        %a{href: "http://hipflat.co.th/en"}
+          %img.desaturate.hipflat{src: "{% asset_path consumers/hipflat.png %}"}
+      %li
+        %img{src: "{% asset_path separator.png %}"}
       %li
         %a{href: "http://roundlake.ru"}
           %img.desaturate.roundlake{src: "{% asset_path consumers/roundlake.png %}"}
