@@ -52,7 +52,8 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   display: block; }
 
 body {
-  font: 16px/23px 'Open Sans', Arial, serif; }
+  font: 16px/23px 'Open Sans', Arial, serif;
+  background: #383838; }
 
 h1, h2, h3, h4, h5, h6 {
   font-weight: bold; }
@@ -79,6 +80,10 @@ h1 {
   font-family: "Trebuchet MS", serif;
   font-size: 36px;
   font-weight: bold; }
+
+.content {
+  padding: 0px;
+  background: white; }
 
 /*TOPBAR*/
 .topbar {
@@ -319,7 +324,7 @@ img.desaturate{
   background-repeat: no-repeat;
   background-attachment: scroll;
   background-position: center;
-  height: 295px;
+  height: 294px;
   margin: 0 auto;
   position: relative; }
 
