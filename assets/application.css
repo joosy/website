@@ -430,6 +430,10 @@ img.desaturate{
   margin: 2.2em auto;
   width: 987px;
   height: 463px; }
+  .code_module h1 {
+    font-family: "Trebuchet MS", serif;
+    font-size: 36px;
+    font-weight: bold; }
   .code_module .code_block {
     margin-top: 1.8em;
     float: left;
