@@ -3,11 +3,11 @@
   <head>
     <meta content='IE=8' http-equiv='X-UA-Compatible'>
     <meta charset='utf-8'>
-    <link href='/favicon.ico' rel='shortcut icon'>
+    <link rel='shortcut icon' href='/favicon.ico'>
     <title>Joosy: browser applications framework</title>
-    <script src='http://code.jquery.com/jquery-1.10.2.min.js' type='text/javascript'></script>
-    <link rel="stylesheet" href="/assets/application.css?cb=cd60a0ebf734fb7ad80c2bc86f0cc709">
-    <script src="/assets/application.js?cb=97e97eb67251353e0179faa300fc38f7"></script>
+    <script type='text/javascript' src='http://code.jquery.com/jquery-1.10.2.min.js'></script>
+    <script type='text/javascript' src='/application.js'></script>
+    <link rel='stylesheet' href='/application.css'>
   </head>
   <body>
     <div class='topbar'>
@@ -58,7 +58,7 @@
               <td>
                 <div class='twitter'>
                   <a href="https://twitter.com/joosy_web" class="twitter-follow-button" data-show-count="false" data-show-screen-name="false">Follow @joosy_web</a>
-                  <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
                 </div>
               </td>
             </tr>
@@ -66,10 +66,9 @@
         </table>
       </div>
     </div>
-    <div class='content'>
-      <div class='logo_module'>
+    <div class='content'><div class='logo_module'>
   <div class='joosy_logo'>
-    <a href='/'><img src='/assets/joosy.png?cb=98927772948b34d992e77bc6ae77cc62'></a>
+    <a href='/'><img src='/joosy.png'></a>
     <div class='text'>
       <h1>Browser Applications Framework</h1>
       <p>That is based on Rails, CoffeeScript and love</p>
@@ -79,7 +78,8 @@
         </strong>
         <a href='https://github.com/joosy/joosy/releases'>Joosy 1.1.2</a>
         <span class='from'>
-          from 11 Jul 2013
+          from
+          11 Jul 2013
         </span>
         &nbsp;&nbsp;|&nbsp;&nbsp;
         <strong>
@@ -87,7 +87,8 @@
         </strong>
         <a href='https://github.com/joosy/joosy/releases'>Joosy 1.2.0.alpha.64</a>
         <span class='from'>
-          from 21 Aug 2013
+          from
+          21 Aug 2013
         </span>
       </small>
     </div>
@@ -97,16 +98,16 @@
   <div class='pic_list'>
     <ul>
       <li>
-        <img class='atomic' src='/assets/highlights/atomic.png?cb=1b9649038a24ce9b5d360ffa9bef2402'>
+        <img class='atomic' src='/highlights/atomic.png'>
       </li>
       <li>
-        <img class='haml' src='/assets/highlights/haml.png?cb=c6a07c95329202d2cf2875011a29d697'>
+        <img class='haml' src='/highlights/haml.png'>
       </li>
       <li>
-        <img class='rails' src='/assets/highlights/rails.png?cb=c6391782a67c9c23d61051ef371819bc'>
+        <img class='rails' src='/highlights/rails.png'>
       </li>
       <li>
-        <img class='circle' src='/assets/highlights/circle.png?cb=c94f4ae9b6769d250b7f856e50f0710b'>
+        <img class='circle' src='/highlights/circle.png'>
       </li>
     </ul>
   </div>
@@ -152,35 +153,35 @@
     </center>
     <div class='code_block'>
       <div class="code_block">
-      <div id="gist-2843507" class="gist">
-        <div class="gist-file">
-          <div class="gist-data gist-syntax">
-              <div class="gist-highlight"><pre><div class="line" id="LC1"><span class="nx">Joosy</span><span class="p">.</span><span class="nx">namespace</span> <span class="s">'Posts'</span><span class="p">,</span> <span class="o">-&gt;</span></div><div class="line" id="LC2">&nbsp;&nbsp;</div><div class="line" id="LC3">&nbsp;&nbsp;<span class="c1"># Page that lists posts</span></div><div class="line" id="LC4">&nbsp;&nbsp;<span class="k">class</span> <span class="nx">@IndexPage</span> <span class="k">extends</span> <span class="nx">ApplicationPage</span></div><div class="line" id="LC5">&nbsp;&nbsp;&nbsp;&nbsp;<span class="c1"># Determines which Layout to wrap this page in</span></div><div class="line" id="LC6">&nbsp;&nbsp;&nbsp;&nbsp;<span class="nx">@layout</span> <span class="nx">ApplicationLayout</span></div><div class="line" id="LC7">&nbsp;&nbsp;&nbsp;&nbsp;<span class="c1"># Determines which template to use</span></div><div class="line" id="LC8">&nbsp;&nbsp;&nbsp;&nbsp;<span class="nx">@view</span>   <span class="s">'index'</span></div><div class="line" id="LC9"><br></div><div class="line" id="LC10">&nbsp;&nbsp;&nbsp;&nbsp;<span class="c1"># Data fetching hook</span></div><div class="line" id="LC11">&nbsp;&nbsp;&nbsp;&nbsp;<span class="nx">@fetch</span> <span class="nf">(complete) -&gt;</span></div><div class="line" id="LC12">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="nx">Post</span><span class="p">.</span><span class="nx">find</span> <span class="s">'all'</span><span class="p">,</span> <span class="p">(</span><span class="nx">posts</span><span class="p">)</span> <span class="o">=&gt;</span></div><div class="line" id="LC13">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="c1"># Passes collection to the template</span></div><div class="line" id="LC14">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="vi">@data.posts = </span><span class="nx">posts</span></div><div class="line" id="LC15">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="nx">complete</span><span class="p">()</span></div></pre></div>
-          </div>
-    
-          <div class="gist-meta">
-            <a href="https://gist.github.com/raw/2843507/87fc788b28d9f513537eca6a44587f037b14f3d5/gistfile1.coffee" style="float:right;">view raw</a>
-            <a href="https://gist.github.com/2843507">This Gist</a> brought to you by <a href="http://github.com">GitHub</a>.
-          </div>
-        </div>
+  <div id="gist-2843507" class="gist">
+    <div class="gist-file">
+      <div class="gist-data gist-syntax">
+          <div class="gist-highlight"><pre><div class="line" id="LC1"><span class="nx">Joosy</span><span class="p">.</span><span class="nx">namespace</span> <span class="s">'Posts'</span><span class="p">,</span> <span class="o">-&gt;</span></div><div class="line" id="LC2">&nbsp;&nbsp;</div><div class="line" id="LC3">&nbsp;&nbsp;<span class="c1"># Page that lists posts</span></div><div class="line" id="LC4">&nbsp;&nbsp;<span class="k">class</span> <span class="nx">@IndexPage</span> <span class="k">extends</span> <span class="nx">ApplicationPage</span></div><div class="line" id="LC5">&nbsp;&nbsp;&nbsp;&nbsp;<span class="c1"># Determines which Layout to wrap this page in</span></div><div class="line" id="LC6">&nbsp;&nbsp;&nbsp;&nbsp;<span class="nx">@layout</span> <span class="nx">ApplicationLayout</span></div><div class="line" id="LC7">&nbsp;&nbsp;&nbsp;&nbsp;<span class="c1"># Determines which template to use</span></div><div class="line" id="LC8">&nbsp;&nbsp;&nbsp;&nbsp;<span class="nx">@view</span>   <span class="s">'index'</span></div><div class="line" id="LC9"><br></div><div class="line" id="LC10">&nbsp;&nbsp;&nbsp;&nbsp;<span class="c1"># Data fetching hook</span></div><div class="line" id="LC11">&nbsp;&nbsp;&nbsp;&nbsp;<span class="nx">@fetch</span> <span class="nf">(complete) -&gt;</span></div><div class="line" id="LC12">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="nx">Post</span><span class="p">.</span><span class="nx">find</span> <span class="s">'all'</span><span class="p">,</span> <span class="p">(</span><span class="nx">posts</span><span class="p">)</span> <span class="o">=&gt;</span></div><div class="line" id="LC13">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="c1"># Passes collection to the template</span></div><div class="line" id="LC14">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="vi">@data.posts = </span><span class="nx">posts</span></div><div class="line" id="LC15">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="nx">complete</span><span class="p">()</span></div></pre></div>
+      </div>
+
+      <div class="gist-meta">
+        <a href="https://gist.github.com/raw/2843507/87fc788b28d9f513537eca6a44587f037b14f3d5/gistfile1.coffee" style="float:right;">view raw</a>
+        <a href="https://gist.github.com/2843507">This Gist</a> brought to you by <a href="http://github.com">GitHub</a>.
       </div>
     </div>
+  </div>
+</div>
     </div>
     <div class='code_block'>
       <div class="code_block">
-      <div id="gist-2843512" class="gist">
-        <div class="gist-file">
-          <div class="gist-data gist-syntax">
-              <div class="gist-highlight"><pre><div class="line" id="LC1"><span class="cp">-# Use Sugar.JS and Coffee!</span></div><div class="line" id="LC2"><span class="p">-</span> <span class="vi">@posts</span><span class="o">.</span><span class="n">each</span> <span class="p">(</span><span class="n">post</span><span class="p">)</span> <span class="o">=&gt;</span></div><div class="line" id="LC3">&nbsp;&nbsp;<span class="nc">.well</span></div><div class="line" id="LC4">&nbsp;&nbsp;&nbsp;&nbsp;<span class="cp">-# Encapsulate your code with widgets</span></div><div class="line" id="LC5">&nbsp;&nbsp;&nbsp;&nbsp;<span class="p">!=</span> <span class="vi">@widget</span> <span class="s1">'div'</span><span class="p">,</span> <span class="o">=&gt;</span> <span class="kp">new</span> <span class="no">TitleEditorWidget</span><span class="p">(</span><span class="n">post</span><span class="p">)</span></div><div class="line" id="LC6">&nbsp;&nbsp;&nbsp;&nbsp;<span class="nt">%hr</span></div><div class="line" id="LC7">&nbsp;&nbsp;&nbsp;&nbsp;<span class="nt">%p</span></div><div class="line" id="LC8">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="cp">-# Enjoy models interface</span></div><div class="line" id="LC9">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="p">=</span> <span class="n">post</span><span class="p">(</span><span class="s1">'body'</span><span class="p">)</span><span class="o">.</span><span class="n">truncate</span><span class="p">(</span><span class="mi">20</span><span class="p">)</span></div><div class="line" id="LC10">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="nt">%a</span><span class="nc">.btn.btn-mini</span><span class="p">{</span><span class="ss">:href</span> <span class="o">=&gt;</span> <span class="s2">"#!/posts/</span><span class="si">#{</span><span class="n">post</span><span class="o">.</span><span class="n">id</span><span class="p">()</span><span class="si">}</span>"}</div><div class="line" id="LC11">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Read it!</div></pre></div>
-          </div>
-    
-          <div class="gist-meta">
-            <a href="https://gist.github.com/raw/2843512/a4a4a63335b6b3140eef5be49953a88f98f7c8ea/gistfile1.haml" style="float:right;">view raw</a>
-            <a href="https://gist.github.com/2843512">This Gist</a> brought to you by <a href="http://github.com">GitHub</a>.
-          </div>
-        </div>
+  <div id="gist-2843512" class="gist">
+    <div class="gist-file">
+      <div class="gist-data gist-syntax">
+          <div class="gist-highlight"><pre><div class="line" id="LC1"><span class="cp">-# Use Sugar.JS and Coffee!</span></div><div class="line" id="LC2"><span class="p">-</span> <span class="vi">@posts</span><span class="o">.</span><span class="n">each</span> <span class="p">(</span><span class="n">post</span><span class="p">)</span> <span class="o">=&gt;</span></div><div class="line" id="LC3">&nbsp;&nbsp;<span class="nc">.well</span></div><div class="line" id="LC4">&nbsp;&nbsp;&nbsp;&nbsp;<span class="cp">-# Encapsulate your code with widgets</span></div><div class="line" id="LC5">&nbsp;&nbsp;&nbsp;&nbsp;<span class="p">!=</span> <span class="vi">@widget</span> <span class="s1">'div'</span><span class="p">,</span> <span class="o">=&gt;</span> <span class="kp">new</span> <span class="no">TitleEditorWidget</span><span class="p">(</span><span class="n">post</span><span class="p">)</span></div><div class="line" id="LC6">&nbsp;&nbsp;&nbsp;&nbsp;<span class="nt">%hr</span></div><div class="line" id="LC7">&nbsp;&nbsp;&nbsp;&nbsp;<span class="nt">%p</span></div><div class="line" id="LC8">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="cp">-# Enjoy models interface</span></div><div class="line" id="LC9">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="p">=</span> <span class="n">post</span><span class="p">(</span><span class="s1">'body'</span><span class="p">)</span><span class="o">.</span><span class="n">truncate</span><span class="p">(</span><span class="mi">20</span><span class="p">)</span></div><div class="line" id="LC10">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="nt">%a</span><span class="nc">.btn.btn-mini</span><span class="p">{</span><span class="ss">:href</span> <span class="o">=&gt;</span> <span class="s2">"#!/posts/</span><span class="si">#{</span><span class="n">post</span><span class="o">.</span><span class="n">id</span><span class="p">()</span><span class="si">}</span>"}</div><div class="line" id="LC11">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Read it!</div></pre></div>
+      </div>
+
+      <div class="gist-meta">
+        <a href="https://gist.github.com/raw/2843512/a4a4a63335b6b3140eef5be49953a88f98f7c8ea/gistfile1.haml" style="float:right;">view raw</a>
+        <a href="https://gist.github.com/2843512">This Gist</a> brought to you by <a href="http://github.com">GitHub</a>.
       </div>
     </div>
+  </div>
+</div>
     </div>
   </div>
 </div>
@@ -190,7 +191,7 @@
       <div class='left'></div>
       <div class='middle'>
         <a href='http://guides.joosy.ws/guides/basics/getting-started.html'>
-          <img src='/assets/buttons/get_started.png?cb=662d846cad36a51211e830a685374ca4'>
+          <img src='/buttons/get_started.png'>
         </a>
       </div>
       <div class='right'></div>
@@ -199,7 +200,7 @@
       <div class='left'></div>
       <div class='middle'>
         <a href='http://api.joosy.ws'>
-          <img src='/assets/buttons/investigate.png?cb=470f488761de440cf723e65ae1b5824c'>
+          <img src='/buttons/investigate.png'>
         </a>
       </div>
       <div class='right'></div>
@@ -208,7 +209,7 @@
       <div class='left'></div>
       <div class='middle'>
         <a href='http://github.com/joosy/joosy'>
-          <img src='/assets/buttons/fork.png?cb=98de82aa5712fc1e5534ca45a453187c'>
+          <img src='/buttons/fork.png'>
         </a>
       </div>
       <div class='right'></div>
@@ -223,54 +224,52 @@
       </li>
       <li>
         <a href='http://news360.com'>
-          <img class='desaturate news360' src='/assets/consumers/news360.png?cb=0702e1e15d566c7b9ea12786b96ff2c5'>
+          <img class='desaturate news360' src='/consumers/news360.png'>
         </a>
       </li>
       <li>
-        <img src='/assets/separator.png?cb=9901956e1eb7a153f6c0884d7dcc4117'>
+        <img src='/separator.png'>
       </li>
       <li>
         <a href='http://hipflat.co.th/en'>
-          <img class='desaturate hipflat' src='/assets/consumers/hipflat.png?cb=39433db1450fbdb84deebb5d59d9f7eb'>
+          <img class='desaturate hipflat' src='/consumers/hipflat.png'>
         </a>
       </li>
       <li>
-        <img src='/assets/separator.png?cb=9901956e1eb7a153f6c0884d7dcc4117'>
+        <img src='/separator.png'>
       </li>
       <li>
         <a href='http://roundlake.ru'>
-          <img class='desaturate roundlake' src='/assets/consumers/roundlake.png?cb=7a12fbc2932d70d2fa85ed9735bea988'>
+          <img class='desaturate roundlake' src='/consumers/roundlake.png'>
         </a>
       </li>
       <li>
-        <img src='/assets/separator.png?cb=9901956e1eb7a153f6c0884d7dcc4117'>
+        <img src='/separator.png'>
       </li>
       <li>
         <a href='http://mainpeople.com'>
-          <img class='desaturate mp' src='/assets/consumers/MP.png?cb=56ea4f0c81c536b82e86963676acd276' style='padding-top:15px;'>
+          <img class='desaturate mp' src='/consumers/MP.png' style='padding-top:15px;'>
         </a>
       </li>
       <li>
-        <img src='/assets/separator.png?cb=9901956e1eb7a153f6c0884d7dcc4117'>
+        <img src='/separator.png'>
       </li>
       <li>
         <a href='http://dvnts.ru'>
-          <img class='desaturate dvnts' src='/assets/consumers/deviants.png?cb=b07b295a5ec9d9cd1f6424be967ed95d'>
+          <img class='desaturate dvnts' src='/consumers/deviants.png'>
         </a>
       </li>
       <li>
-        <img src='/assets/separator.png?cb=9901956e1eb7a153f6c0884d7dcc4117'>
+        <img src='/separator.png'>
       </li>
       <li style='padding-right: 0px'>
         <a href='http://control.us'>
-          <img class='desaturate controlus' src='/assets/consumers/controlus.png?cb=22bbc8b01514b2ce891c88b149f480da'>
+          <img class='controlus desaturate' src='/consumers/controlus.png'>
         </a>
       </li>
     </ul>
   </div>
-</div>
-
-    </div>
+</div></div>
     <div class='footer'>
       <div class='ftr_wrap'>
         <div class='left'>
