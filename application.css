@@ -280,7 +280,6 @@ img.desaturate {
   filter: grayscale(100%);
   -webkit-filter: grayscale(100%);
   -moz-filter: grayscale(100%);
-  filter: grayscale(100%);
   filter: #808080;
   -webkit-filter: grayscale(1);
 }
@@ -470,7 +469,7 @@ img.desaturate {
   padding: 8px;
   font-size: 12px;
   line-height: 12px;
-  background-color: rgba(0,0,0,0.6);
+  background-color: #643a14;
   border-radius: 4px;
   text-align: center;
   color: #fff;
@@ -534,10 +533,20 @@ img.desaturate {
   left: 18px;
 }
 .text_list ul li {
-  width: 174px;
+  width: 170px;
   float: left;
-  padding-right: 4em;
 }
+.text_list ul li.decisions {
+  padding-left: 5px;
+  padding-right: 65px;
+}
+.text_list ul li.rendering {
+  padding-right: 55px;
+}
+.text_list ul li.rails {
+  padding-right: 65px;
+}
+.text_list ul li .ecma,
 .text_list ul li .header {
   font-size: 14px;
   font-weight: bold;
