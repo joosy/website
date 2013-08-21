@@ -1,0 +1,157 @@
+//= require vendor/embedded.css
+//= require vendor/reset.styl
+//= require_self
+//= require_tree .
+
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700');
+
+body
+  font 16px/23px 'Open Sans', Arial, serif
+  background #383838
+
+li
+  line-height 24px
+
+ul, ol
+  margin-bottom 9px
+
+a
+  color #43ACCC
+  &:hover
+    color #349CBC
+  &:visited
+    color #67BCD5
+
+img
+  &.desaturate
+    filter grayscale(100%)
+    -webkit-filter grayscale(100%)
+    -moz-filter grayscale(100%)
+    filter grayscale(100%)
+    filter gray
+    -webkit-filter grayscale(1)
+
+.gist-file
+  .gist-data
+    height 355px
+
+.content
+  padding 0px
+  background white
+  header
+    background -webkit-linear-gradient(#ffa000, #ff8300)
+    background linear-gradient(#ffa000, #ff8300)
+    filter progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffa000', endColorstr='#ff8300',GradientType=0 )
+    padding 10px
+    .container
+      width 768px
+      margin auto
+      padding 10px 0
+      padding-top 20px
+      img
+        &.logo
+          height 80px
+          width 94px
+          margin-top -10px
+          margin-left 10px
+          margin-right 15px
+          vertical-align middle
+      h1
+        font-weight bold
+        font-size 40px
+        color white
+        display inline
+        font-family 'Trebuchet MS', serif
+        vertical-align middle
+        text-shadow 1px 1px gray
+  section
+    &.main
+      width 768px
+      margin auto
+      padding-top 40px
+      padding-bottom 20px
+      line-height 23px
+      font-family 'Open Sans', Arial, serif
+      font-style normal
+      font-variant normal
+      font-weight normal
+      strong
+        font-weight bold
+      ul
+        list-style-type circle
+        li
+          margin-left 40px
+
+.topbar
+  background #3c3c3c
+  background -moz-linear-gradient(#3c3c3c, #2a2a2a) repeat scroll 0 0 transparent
+  background-image -webkit-linear-gradient(top, #3c3c3c, #2a2a2a)
+  padding-top .8em
+  margin-bottom -1em
+  font-size .7em
+  text-align center
+  height 4em
+  .topbar_wrap
+    width 600px
+    margin 3px auto 0
+    td
+      vertical-align middle
+      margin 0
+      padding 0 0.7em
+      border-right .1em solid #626262
+      white-space nowrap
+      list-style none
+      a
+        color #ffa000
+        font-weight bold
+        display block
+        margin-top -4px
+        position relative
+        top 1px
+      &.disabled
+        a
+          color gray
+          text-decoration none
+          font-weight bold
+      &.active
+        a
+          color white
+          text-decoration none
+          font-weight bold
+      &:last-child
+        border-right none
+      .twitter
+        height 20px
+        overflow hidden
+
+.footer
+  clear both
+  font-family "Trebuchet MS"
+  height 97px
+  background #383838 no-repeat
+  .ftr_wrap
+    width 906px
+    margin 0 auto
+    strong
+      font-weight bold
+    small
+      font-size 0.9em
+    .left
+      float left
+      p
+        font-size 14px
+        color #cbcbcb
+        text-shadow none
+        padding-top 30px
+        a
+          color #2678c4
+    .right
+      float right
+      p
+        line-height 20px
+        font-size 14px
+        color #989898
+        text-shadow none
+        padding-top 30px
+        a
+          color #2678c4

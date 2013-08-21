@@ -1,7 +1,0 @@
-name: Your New Jekyll Site
-markdown: redcarpet
-pygments: true
-source: source
-destination: build
-assets:
-  cachebust: soft

@@ -1,0 +1,118 @@
+!= @layout 'layouts/default.haml', =>
+  .logo_module
+    .joosy_logo
+      %a{href: "/"}
+        %img{src: "/joosy.png"}<>
+      .text
+        %h1 Browser Applications Framework
+        %p That is based on Rails, CoffeeScript and love
+        %small
+          %strong
+            Stable:
+          %a{href: 'https://github.com/joosy/joosy/releases'}<
+            Joosy #{@config.versions.stable[0].number}
+          %span.from
+            from
+            = Date.create(@config.versions.stable[0].built_at).format("{dd} {Mon} {yyyy}")
+          &nbsp;&nbsp;|&nbsp;&nbsp;
+          %strong
+            Edge:
+          %a{href: 'https://github.com/joosy/joosy/releases'}<
+            Joosy #{@config.versions.edge[0].number}
+          %span.from
+            from
+            = Date.create(@config.versions.edge[0].built_at).format("{dd} {Mon} {yyyy}")
+  .body_part
+    .pic_list
+      %ul
+        %li
+          %img{src: "/highlights/atomic.png", class: 'atomic'}
+        %li
+          %img{src: "/highlights/haml.png", class: 'haml'}
+        %li
+          %img{src: "/highlights/rails.png", class: 'rails'}
+        %li
+          %img{src: "/highlights/circle.png", class: 'circle'}
+    .text_list
+      %ul
+        %li
+          %p.header
+            The right decisions made for you.
+          %p.body
+            Joosy claims to be conventions-centric. Concentrate on what you should do and not on how to achieve it. Incredible productivity out of box.
+        %li
+          %p.header
+            The dynamic rendering done right.
+          %p.body
+            Bind your data to DOM without being limited to a specific template engine. Use HAML. Use helpers. And give it a sauce of identity map for a real joy.
+        %li
+          %p.header
+            Rails way to the browser.
+          %p.body
+            Joosy inherits Rails' passion for conventions and happiness. It also inherits the typical solutions to the typical tasks. You are guaranteed to feel familiar and smile.
+        %li
+          %p.header
+            Don't wait for ECMA.
+          %p.body
+            Joosy interface was designed to get best out of CoffeeScript. Filled with Sugar.JS it turns Javascript into something you will want to use every day. Even at the weekend.
+
+    .code_module
+      %center
+        %h1 Look, it's beautiful and easy to use:
+      .code_block
+        != @partial '_code.html'
+      .code_block
+        != @partial '_template.html'
+  .button_module
+    .three_buttons
+      .button.get_started
+        .left
+        .middle
+          %a{href: "http://guides.joosy.ws/guides/basics/getting-started.html"}
+            %img{src: "/buttons/get_started.png"}
+        .right
+      .button.investigate
+        .left
+        .middle
+          %a{href: "http://api.joosy.ws"}
+            %img{src: "/buttons/investigate.png"}
+        .right
+      .button.fork_us
+        .left
+        .middle
+          %a{:href => "http://github.com/joosy/joosy"}
+            %img{src: "/buttons/fork.png"}
+        .right
+  .joosy_usage_module
+    .wrap_usage
+      %ul
+        %li{style: "padding-left: 0px; padding-right: 14px"}
+          %p Who's using Joosy:
+        %li
+          %a{href: "http://news360.com"}
+            %img.desaturate.news360{src: "/consumers/news360.png"}
+        %li
+          %img{src: "/separator.png"}
+        %li
+          %a{href: "http://hipflat.co.th/en"}
+            %img.desaturate.hipflat{src: "/consumers/hipflat.png"}
+        %li
+          %img{src: "/separator.png"}
+        %li
+          %a{href: "http://roundlake.ru"}
+            %img.desaturate.roundlake{src: "/consumers/roundlake.png"}
+        %li
+          %img{src: "/separator.png"}
+        %li
+          %a{href: "http://mainpeople.com"}
+            %img.desaturate.mp{src: "/consumers/MP.png", style: "padding-top:15px;"}
+        %li
+          %img{src: "/separator.png"}
+        %li
+          %a{href: "http://dvnts.ru"}
+            %img.desaturate.dvnts{src: "/consumers/deviants.png"}
+        %li
+          %img{src: "/separator.png"}
+        %li{style: "padding-right: 0px"}
+          %a{href: "http://control.us"}
+            %img.desaturate.controlus{src: "/consumers/controlus.png"}
