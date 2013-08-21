@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta content='IE=8' http-equiv='X-UA-Compatible'>
+    <meta charset='utf-8'>
+    <link rel='shortcut icon' href='/favicon.ico'>
+    <title>Joosy: browser applications framework</title>
+    <script type='text/javascript' src='http://code.jquery.com/jquery-1.10.2.min.js'></script>
+    <script type='text/javascript' src='/application.js'></script>
+    <link rel='stylesheet' href='/application.css'>
+  </head>
+  <body>
+    <div class='topbar'>
+      <div class='topbar_wrap'>
+        <table cellpadding='0' cellspacing='0'>
+          <tbody>
+            <tr>
+              <td class='active'>
+                <a href='/'>
+                  Joosy
+                </a>
+              </td>
+              <td class='disabled'>
+                <a href='#'>
+                  Download
+                </a>
+              </td>
+              <td>
+                <a href='http://guides.joosy.ws'>
+                  Guides
+                </a>
+              </td>
+              <td>
+                <a href='http://api.joosy.ws'>
+                  API
+                </a>
+              </td>
+              <td>
+                <a href='http://sample.joosy.ws/routes.js.coffee.html'>
+                  Annotated sample
+                </a>
+              </td>
+              <td class='disabled'>
+                <a href='#'>
+                  Screencasts
+                </a>
+              </td>
+              <td>
+                <a href='http://github.com/joosy/joosy/issues'>
+                  Bugs
+                </a>
+              </td>
+              <td class='disabled'>
+                <a href='#'>
+                  Community
+                </a>
+              </td>
+              <td>
+                <div class='twitter'>
+                  <a href="https://twitter.com/joosy_web" class="twitter-follow-button" data-show-count="false" data-show-screen-name="false">Follow @joosy_web</a>
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+                </div>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+    <div class='content'><div class='logo_module'>
+  <div class='joosy_logo'>
+    <a href='/'><img src='/joosy.png'></a>
+    <div class='text'>
+      <h1>Browser Applications Framework</h1>
+      <p>That is based on Rails, CoffeeScript and love</p>
+      <small>
+        <strong>
+          Stable:
+        </strong>
+        <a href='https://github.com/joosy/joosy/releases'>Joosy 1.1.2</a>
+        <span class='from'>
+          from
+          11 Jul 2013
+        </span>
+        &nbsp;&nbsp;|&nbsp;&nbsp;
+        <strong>
+          Edge:
+        </strong>
+        <a href='https://github.com/joosy/joosy/releases'>Joosy 1.2.0.alpha.64</a>
+        <span class='from'>
+          from
+          21 Aug 2013
+        </span>
+      </small>
+    </div>
+  </div>
+</div>
+<div class='body_part'>
+  <div class='pic_list'>
+    <ul>
+      <li>
+        <img class='atomic' src='/highlights/atomic.png'>
+      </li>
+      <li>
+        <img class='haml' src='/highlights/haml.png'>
+      </li>
+      <li>
+        <img class='rails' src='/highlights/rails.png'>
+      </li>
+      <li>
+        <img class='circle' src='/highlights/circle.png'>
+      </li>
+    </ul>
+  </div>
+  <div class='text_list'>
+    <ul>
+      <li>
+        <p class='header'>
+          The right decisions made for you.
+        </p>
+        <p class='body'>
+          Joosy claims to be conventions-centric. Concentrate on what you should do and not on how to achieve it. Incredible productivity out of box.
+        </p>
+      </li>
+      <li>
+        <p class='header'>
+          The dynamic rendering done right.
+        </p>
+        <p class='body'>
+          Bind your data to DOM without being limited to a specific template engine. Use HAML. Use helpers. And give it a sauce of identity map for a real joy.
+        </p>
+      </li>
+      <li>
+        <p class='header'>
+          Rails way to the browser.
+        </p>
+        <p class='body'>
+          Joosy inherits Rails' passion for conventions and happiness. It also inherits the typical solutions to the typical tasks. You are guaranteed to feel familiar and smile.
+        </p>
+      </li>
+      <li>
+        <p class='header'>
+          Don't wait for ECMA.
+        </p>
+        <p class='body'>
+          Joosy interface was designed to get best out of CoffeeScript. Filled with Sugar.JS it turns Javascript into something you will want to use every day. Even at the weekend.
+        </p>
+      </li>
+    </ul>
+  </div>
+  <div class='code_module'>
+    <center>
+      <h1>Look, it's beautiful and easy to use:</h1>
+    </center>
+    <div class='code_block'>
+      <div class="code_block">
+  <div id="gist-2843507" class="gist">
+    <div class="gist-file">
+      <div class="gist-data gist-syntax">
+          <div class="gist-highlight"><pre><div class="line" id="LC1"><span class="nx">Joosy</span><span class="p">.</span><span class="nx">namespace</span> <span class="s">'Posts'</span><span class="p">,</span> <span class="o">-&gt;</span></div><div class="line" id="LC2">&nbsp;&nbsp;</div><div class="line" id="LC3">&nbsp;&nbsp;<span class="c1"># Page that lists posts</span></div><div class="line" id="LC4">&nbsp;&nbsp;<span class="k">class</span> <span class="nx">@IndexPage</span> <span class="k">extends</span> <span class="nx">ApplicationPage</span></div><div class="line" id="LC5">&nbsp;&nbsp;&nbsp;&nbsp;<span class="c1"># Determines which Layout to wrap this page in</span></div><div class="line" id="LC6">&nbsp;&nbsp;&nbsp;&nbsp;<span class="nx">@layout</span> <span class="nx">ApplicationLayout</span></div><div class="line" id="LC7">&nbsp;&nbsp;&nbsp;&nbsp;<span class="c1"># Determines which template to use</span></div><div class="line" id="LC8">&nbsp;&nbsp;&nbsp;&nbsp;<span class="nx">@view</span>   <span class="s">'index'</span></div><div class="line" id="LC9"><br></div><div class="line" id="LC10">&nbsp;&nbsp;&nbsp;&nbsp;<span class="c1"># Data fetching hook</span></div><div class="line" id="LC11">&nbsp;&nbsp;&nbsp;&nbsp;<span class="nx">@fetch</span> <span class="nf">(complete) -&gt;</span></div><div class="line" id="LC12">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="nx">Post</span><span class="p">.</span><span class="nx">find</span> <span class="s">'all'</span><span class="p">,</span> <span class="p">(</span><span class="nx">posts</span><span class="p">)</span> <span class="o">=&gt;</span></div><div class="line" id="LC13">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="c1"># Passes collection to the template</span></div><div class="line" id="LC14">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="vi">@data.posts = </span><span class="nx">posts</span></div><div class="line" id="LC15">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="nx">complete</span><span class="p">()</span></div></pre></div>
+      </div>
+
+      <div class="gist-meta">
+        <a href="https://gist.github.com/raw/2843507/87fc788b28d9f513537eca6a44587f037b14f3d5/gistfile1.coffee" style="float:right;">view raw</a>
+        <a href="https://gist.github.com/2843507">This Gist</a> brought to you by <a href="http://github.com">GitHub</a>.
+      </div>
+    </div>
+  </div>
+</div>
+    </div>
+    <div class='code_block'>
+      <div class="code_block">
+  <div id="gist-2843512" class="gist">
+    <div class="gist-file">
+      <div class="gist-data gist-syntax">
+          <div class="gist-highlight"><pre><div class="line" id="LC1"><span class="cp">-# Use Sugar.JS and Coffee!</span></div><div class="line" id="LC2"><span class="p">-</span> <span class="vi">@posts</span><span class="o">.</span><span class="n">each</span> <span class="p">(</span><span class="n">post</span><span class="p">)</span> <span class="o">=&gt;</span></div><div class="line" id="LC3">&nbsp;&nbsp;<span class="nc">.well</span></div><div class="line" id="LC4">&nbsp;&nbsp;&nbsp;&nbsp;<span class="cp">-# Encapsulate your code with widgets</span></div><div class="line" id="LC5">&nbsp;&nbsp;&nbsp;&nbsp;<span class="p">!=</span> <span class="vi">@widget</span> <span class="s1">'div'</span><span class="p">,</span> <span class="o">=&gt;</span> <span class="kp">new</span> <span class="no">TitleEditorWidget</span><span class="p">(</span><span class="n">post</span><span class="p">)</span></div><div class="line" id="LC6">&nbsp;&nbsp;&nbsp;&nbsp;<span class="nt">%hr</span></div><div class="line" id="LC7">&nbsp;&nbsp;&nbsp;&nbsp;<span class="nt">%p</span></div><div class="line" id="LC8">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="cp">-# Enjoy models interface</span></div><div class="line" id="LC9">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="p">=</span> <span class="n">post</span><span class="p">(</span><span class="s1">'body'</span><span class="p">)</span><span class="o">.</span><span class="n">truncate</span><span class="p">(</span><span class="mi">20</span><span class="p">)</span></div><div class="line" id="LC10">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="nt">%a</span><span class="nc">.btn.btn-mini</span><span class="p">{</span><span class="ss">:href</span> <span class="o">=&gt;</span> <span class="s2">"#!/posts/</span><span class="si">#{</span><span class="n">post</span><span class="o">.</span><span class="n">id</span><span class="p">()</span><span class="si">}</span>"}</div><div class="line" id="LC11">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Read it!</div></pre></div>
+      </div>
+
+      <div class="gist-meta">
+        <a href="https://gist.github.com/raw/2843512/a4a4a63335b6b3140eef5be49953a88f98f7c8ea/gistfile1.haml" style="float:right;">view raw</a>
+        <a href="https://gist.github.com/2843512">This Gist</a> brought to you by <a href="http://github.com">GitHub</a>.
+      </div>
+    </div>
+  </div>
+</div>
+    </div>
+  </div>
+</div>
+<div class='button_module'>
+  <div class='three_buttons'>
+    <div class='button get_started'>
+      <div class='left'></div>
+      <div class='middle'>
+        <a href='http://guides.joosy.ws/guides/basics/getting-started.html'>
+          <img src='/buttons/get_started.png'>
+        </a>
+      </div>
+      <div class='right'></div>
+    </div>
+    <div class='button investigate'>
+      <div class='left'></div>
+      <div class='middle'>
+        <a href='http://api.joosy.ws'>
+          <img src='/buttons/investigate.png'>
+        </a>
+      </div>
+      <div class='right'></div>
+    </div>
+    <div class='button fork_us'>
+      <div class='left'></div>
+      <div class='middle'>
+        <a href='http://github.com/joosy/joosy'>
+          <img src='/buttons/fork.png'>
+        </a>
+      </div>
+      <div class='right'></div>
+    </div>
+  </div>
+</div>
+<div class='joosy_usage_module'>
+  <div class='wrap_usage'>
+    <ul>
+      <li style='padding-left: 0px; padding-right: 14px'>
+        <p>Who's using Joosy:</p>
+      </li>
+      <li>
+        <a href='http://news360.com'>
+          <img class='desaturate news360' src='/consumers/news360.png'>
+        </a>
+      </li>
+      <li>
+        <img src='/separator.png'>
+      </li>
+      <li>
+        <a href='http://hipflat.co.th/en'>
+          <img class='desaturate hipflat' src='/consumers/hipflat.png'>
+        </a>
+      </li>
+      <li>
+        <img src='/separator.png'>
+      </li>
+      <li>
+        <a href='http://roundlake.ru'>
+          <img class='desaturate roundlake' src='/consumers/roundlake.png'>
+        </a>
+      </li>
+      <li>
+        <img src='/separator.png'>
+      </li>
+      <li>
+        <a href='http://mainpeople.com'>
+          <img class='desaturate mp' src='/consumers/MP.png' style='padding-top:15px;'>
+        </a>
+      </li>
+      <li>
+        <img src='/separator.png'>
+      </li>
+      <li>
+        <a href='http://dvnts.ru'>
+          <img class='desaturate dvnts' src='/consumers/deviants.png'>
+        </a>
+      </li>
+      <li>
+        <img src='/separator.png'>
+      </li>
+      <li style='padding-right: 0px'>
+        <a href='http://control.us'>
+          <img class='controlus desaturate' src='/consumers/controlus.png'>
+        </a>
+      </li>
+    </ul>
+  </div>
+</div></div>
+    <div class='footer'>
+      <div class='ftr_wrap'>
+        <div class='left'>
+          <p>
+            <strong>
+              Copyright 2012-2013,
+              <a href='http://staal.io'>
+                Boris Staal
+              </a>
+            </strong>
+            <br>
+            <small>
+              <span>
+                Hosted at
+              </span><a href='http://pages.github.com'>Github Pages</a>,
+              <span>
+                generated with
+              </span><a href='http://jekyllrb.com'>Jekyll</a></small>
+          </p>
+        </div>
+        <div class='right'>
+          <p>
+            Want to improve something on this site?
+            <br><a href='https://github.com/joosy/website'>Pull requests</a><span>
+              are very welcome!
+            </span>
+          </p>
+        </div>
+      </div>
+    </div>
+    <a href='https://github.com/joosy/joosy'>
+      <img alt='Fork me on GitHub' src='https://s3.amazonaws.com/github/ribbons/forkme_right_red_aa0000.png' style='position: absolute; top: 0; right: 0; border: 0;'>
+    </a>
+    <script>
+      var _gauges = _gauges || [];
+      (function() {
+        var t   = document.createElement('script');
+        t.type  = 'text/javascript';
+        t.async = true;
+        t.id    = 'gauges-tracker';
+        t.setAttribute('data-site-id', '4fccaa07613f5d4efe000007');
+        t.src = '//secure.gaug.es/track.js';
+        var s = document.getElementsByTagName('script')[0];
+        s.parentNode.insertBefore(t, s);
+      })();
+    </script>
+  </body>
+</html>
