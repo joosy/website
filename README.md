@@ -1,6 +1,10 @@
-# [http://www.joosy.ws](http://www.joosy.ws)
+# :heart:&nbsp;[joosy.ws](http://joosy.ws)
 
-:heart: :heart: :heart: The website of Joosy framework :heart: :heart: :heart:
+<a href="http://joosy.ws"><img src="http://f.cl.ly/items/3X0f2K1z3r1X3K162W2c/logo.png" align="right" /></a>
+
+The website of **Joosy framework** based on [Jekyll](http://jekyllrb.com).
+
+If you are seeking for information about Joosy, start with [official site](http://joosy.ws), [guides](http://guides.joosy.ws) or [central repository](https://github.com/joosy/joosy/).
 
 ## Hacking
 
