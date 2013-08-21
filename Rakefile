@@ -9,7 +9,7 @@ end
 task :push do
   cd(deploy_dir) { system "git pull" }
   Dir["#{deploy_dir}/*"].each { |f| rm_rf(f) }
-  system "jekyll build"
+  system "grunt compile"
 
   cd(deploy_dir) do
     system "git add -A"
