@@ -256,6 +256,9 @@ summary {
   display: block;
 }
 @import url("https://fonts.googleapis.com/css?family=Open+Sans:400,700");
+html {
+  min-width: 1000px;
+}
 body {
   font: 16px/23px 'Open Sans', Arial, serif;
   background: #383838;
