@@ -14,6 +14,7 @@
     "grunt": "~0.4.1",
     "grill": "~1.0.0-alpha.13",
     "httpsync": "0.0.7",
-    "sugar": "~1.3.9"
+    "sugar": "~1.3.9",
+    "grunt-gh-pages": "git+https://github.com/inossidabile/grunt-gh-pages.git"
   }
 }

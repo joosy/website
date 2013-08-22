@@ -1,3 +1,5 @@
+// Bams!
+
 != @layout 'layouts/default.haml', =>
   .logo_module
     .joosy_logo
@@ -22,6 +24,7 @@
           %span.from
             from
             = Date.create(@config.versions.edge[0].built_at).format("{dd} {Mon} {yyyy}")
+
   .body_part
     .pic_list
       %ul
