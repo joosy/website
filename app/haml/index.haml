@@ -15,7 +15,7 @@
             Joosy #{@config.versions.stable[0].number}
           %span.from
             from
-            = Date.create(@config.versions.stable[0].built_at).format("{dd} {Mon} {yyyy}")
+            = @config.moment(@config.versions.stable[0].built_at).format("D MMM YYYY")
           &nbsp;&nbsp;|&nbsp;&nbsp;
           %strong
             Edge:
@@ -23,7 +23,7 @@
             Joosy #{@config.versions.edge[0].number}
           %span.from
             from
-            = Date.create(@config.versions.edge[0].built_at).format("{dd} {Mon} {yyyy}")
+            = @config.moment(@config.versions.edge[0].built_at).format("D MMM YYYY")
 
   .body_part
     .pic_list

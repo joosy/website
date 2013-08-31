@@ -1,4 +1,3 @@
-Sugar    = require 'sugar'
 httpsync = require 'httpsync'
 
 module.exports = (grunt) ->
@@ -12,6 +11,8 @@ module.exports = (grunt) ->
 
     config.versions.stable = versions.filter (x) -> !x.prerelease
     config.versions.edge = versions.filter (x) -> x.prerelease
+
+    config.moment = require 'moment'
 
     config
 
