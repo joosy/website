@@ -1,0 +1,28 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700');
+
+body
+  font 16px/23px 'Open Sans', Arial, serif
+  background #383838
+
+  #github img
+    z-index: 10000
+
+  a
+    color #43ACCC
+    &:hover
+      color #349CBC
+    &:visited
+      color #67BCD5
+
+  img
+    &.desaturate
+      filter grayscale(100%)
+      -webkit-filter grayscale(100%)
+      -moz-filter grayscale(100%)
+      filter gray
+      -webkit-filter grayscale(1)
+
+      &:hover
+        filter none
+        -webkit-filter none
+        -moz-filter none

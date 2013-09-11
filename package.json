@@ -16,5 +16,8 @@
     "httpsync": "0.0.7",
     "grunt-gh-pages": "git+https://github.com/inossidabile/grunt-gh-pages.git",
     "moment": "~2.1.0"
+  },
+  "dependencies": {
+    "less": "~1.4.2"
   }
 }

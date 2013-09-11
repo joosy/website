@@ -24,7 +24,7 @@ module.exports = (grunt) ->
       config: config()
       assets:
         root: 'application.*'
-        skip: 'haml/layouts'
+        skip: 'layouts/*.haml'
 
     'gh-pages':
       application:
