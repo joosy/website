@@ -5914,15 +5914,6 @@ body {
 body #github img {
   z-index: 10000;
 }
-body a {
-  color: #43accc;
-}
-body a:hover {
-  color: #349cbc;
-}
-body a:visited {
-  color: #67bcd5;
-}
 body img.desaturate {
   filter: grayscale(100%);
   -webkit-filter: grayscale(100%);
