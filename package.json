@@ -8,7 +8,7 @@
   "license": "BSD",
   "devDependencies": {
     "coffee-script": "~1.6.3",
-    "stylus": "~0.37.0",
+    "stylus": "~0.38.0",
     "nib": "~1.0.1",
     "haml-coffee": "~1.11.4",
     "grunt": "~0.4.1",
