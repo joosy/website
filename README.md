@@ -15,3 +15,6 @@ We use [Grill](https://github.com/joosy/grill) as a building platform so if you 
   3. Run `grunt server` to start local server at [port 4000](http://localhost:4000).
   4. Modify whatever you want – changes will automatically precompile.
   5. Once you are happy with modifications – submit a pull request! :bow:
+
+[![Bitdeli Badge](https://d2weczhvl823v0.cloudfront.net/joosy/website/trend.png)](https://bitdeli.com/free "Bitdeli Badge")
+
