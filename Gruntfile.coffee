@@ -17,7 +17,7 @@ module.exports = (grunt) ->
     config
 
   grunt.loadNpmTasks 'grill'
-  grunt.loadNpmTasks 'grunt-gh-pages'
+  grunt.loadNpmTasks 'grunt-push'
 
   grunt.initConfig
     grill:
@@ -26,13 +26,18 @@ module.exports = (grunt) ->
         root: 'application.*'
         skip: 'layouts/*.haml'
 
-    'gh-pages':
-      application:
+    push:
+      site:
         options:
-          clone: 'public'
-          command:
-            cmd: 'grunt'
-            args: ['compile']
+          cwd: 'public'
+          branch: 'gh-pages'
 
   grunt.registerTask 'server', 'grill:server'
   grunt.registerTask 'compile', 'grill:compile'
+
+  grunt.registerTask 'publish', [
+    'push:prepare:site',
+    'compile',
+    'push:add:site',
+    'push:deliver:site'
+  ]

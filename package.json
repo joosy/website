@@ -14,8 +14,8 @@
     "grunt": "~0.4.1",
     "grill": "~1.0.0-alpha.18",
     "httpsync": "0.0.7",
-    "grunt-gh-pages": "git+https://github.com/inossidabile/grunt-gh-pages.git",
-    "moment": "~2.2.0"
+    "moment": "~2.2.0",
+    "grunt-push": "~0.1.1"
   },
   "dependencies": {
     "less": "~1.4.2"
