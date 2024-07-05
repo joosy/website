@@ -6000,7 +6000,7 @@ footer .pull-right p a {
   font-size: 12px;
 }
 #index-page .banner {
-  background-image: url("/bg_header.png");
+  background-image: url("/website/bg_header.png");
   background-repeat: no-repeat;
   background-attachment: scroll;
   background-position: center;
