@@ -6147,12 +6147,12 @@ footer .pull-right p a {
   background: url("/left_btn.png") no-repeat scroll left top transparent;
 }
 #index-page .buttons .all .button .middle {
-  background: url("/middle_btn.png") repeat-x scroll left top transparent;
+  background: url("/website/middle_btn.png") repeat-x scroll left top transparent;
   padding: 0 4px 0 2px;
   width: 262px;
 }
 #index-page .buttons .all .button .right {
-  background: url("/right_btn.png") no-repeat scroll left top transparent;
+  background: url("/website/right_btn.png") no-repeat scroll left top transparent;
 }
 #index-page .buttons .all .button > div {
   width: 10px;
@@ -6160,14 +6160,14 @@ footer .pull-right p a {
   float: left;
 }
 #index-page .buttons .all .button:hover .left {
-  background: url("/left_btn_hover.png") no-repeat scroll left top transparent;
+  background: url("/website/left_btn_hover.png") no-repeat scroll left top transparent;
 }
 #index-page .buttons .all .button:hover .middle {
-  background: url("/middle_btn_hover.png") repeat-x scroll left top transparent;
+  background: url("/website/middle_btn_hover.png") repeat-x scroll left top transparent;
   padding: 0 4px 0 2px;
 }
 #index-page .buttons .all .button:hover .right {
-  background: url("/right_btn_hover.png") no-repeat scroll left top transparent;
+  background: url("/website/right_btn_hover.png") no-repeat scroll left top transparent;
 }
 #index-page .buttons .all .button a {
   display: block;
