@@ -6144,7 +6144,7 @@ footer .pull-right p a {
   float: left;
 }
 #index-page .buttons .all .button .left {
-  background: url("/left_btn.png") no-repeat scroll left top transparent;
+  background: url("/website/left_btn.png") no-repeat scroll left top transparent;
 }
 #index-page .buttons .all .button .middle {
   background: url("/website/middle_btn.png") repeat-x scroll left top transparent;
